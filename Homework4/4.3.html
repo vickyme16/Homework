@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result = '';
+    let age = prompt('How old are you?');
+    let city = prompt('Where do you live?');
+    let sport = prompt('What is your favourite kind of sport?');
+
+    if (city === 'Kyiv' || city === 'London' || city === 'Washington') {
+        result += `You live in the capital ${city}`
+    } else {
+        result += `You live in the city ${city}`
+    }
+    result += '\n'
+
+    if (sport === 'boxing') {
+        result += `Nice! Do you want to become new Usyk?`
+    } else if (sport === 'football') {
+        result += `Nice! Do you want to become new Ronaldo?`
+    } else if (sport === 'basketball') {
+        result += `Nice! Do you want to become new Jordan?`
+    }
+    result += '\n'
+
+    alert(age + '\n' + result)
+</script>
+</body>
+</html>

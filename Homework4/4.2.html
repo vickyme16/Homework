@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt('What numbers do you want to check?');
+
+    if (num[0] === num[1] && num[0] === num [2]) {
+        alert('All digits are the same!');
+    } else if (num[0] === num[1] || num[0] === num [2] || num[1] === num[2]) {
+        alert('You have 2 matched digits!')
+    } else {
+        alert('All digits are unique!');
+    }
+</script>
+</body>
+</html>

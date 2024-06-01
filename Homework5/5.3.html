@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+\\ Дано ціле число N (ввести через prompt)
+Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N
+
+
+<script>
+    let gotN = prompt('Enter N:');
+
+    for (let i = 1; i < 100; i++) {
+        if (i * i < gotN) {
+            console.log(i)
+        }
+    }
+/////////////////////
+    for (let i = 1; i * i < gotN; i++) {
+        console.log(i)
+    }
+</script>
+</body>
+</html>

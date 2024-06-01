@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = Number(prompt('Enter N:'));
+    let isSimple = true;
+    for (let i = 2; i < N; i++) {
+        if (N % i === 0) {
+            isSimple = false;
+            break;
+        }
+    }
+    console.log(isSimple)
+</script>
+</body>
+</html>

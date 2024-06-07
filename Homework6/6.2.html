@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function count(all) {
+        let numbers = 0;
+        let quantity = 0;
+
+        for (let i = 0; i < all.length; i++) {
+            if (typeof all[i] === 'number' && !Number.isNaN(all[i])) {
+                numbers += all[i];
+                quantity += 1;
+            }
+        }
+
+        if (quantity === 0) {
+            return 0;
+        }
+
+        let result = numbers / quantity;
+        return result;
+    }
+
+    let all = [1, 'hello', 3, true, 5, 'world', 8, {}, NaN, 10]
+
+    console.log(count(all))
+
+</script>
+</body>
+</html>

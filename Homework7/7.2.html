@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function count() {
+        let result;
+
+        for (let i = 0; i < 10; i++) {
+            result = prompt('Enter number:');
+
+            if (result === null) {
+                console.log("Користувач відмінив введення.");
+                return;
+            }
+
+            result = Number(result);
+
+            if (!isNaN(result) && result > 100) {
+                console.log("Ви ввели число:", result);
+                return;
+            } else {
+                alert("Число повинно бути більше 100. Спробуйте ще раз.");
+            }
+        }
+
+        console.log("Максимальна кількість ітерацій досягнута. Останнє введене число:", result);
+    }
+
+    count();
+</script>
+</body>
+</html>

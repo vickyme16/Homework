@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sum() {
+        let localCount = 0;
+
+        function plus(num) {
+            localCount += num;
+            console.log(localCount)
+        }
+        return plus
+    }
+    let plus = sum();
+    plus(4);
+    plus(6);
+    plus(8);
+
+
+</script>
+</body>
+</html>
